@@ -1,9 +1,10 @@
 /* sub1_1. style. css */
+/* 커피나무 소개 */
 
 
 /* title_img */
 #title_img {
-    width: 100%;
+    width: 1920px;
     height: 500px;
     min-width: 1200px;
     margin: 0 auto;
@@ -14,8 +15,7 @@
     font-style: italic;
     font-size: 50px;
     color: #fff;
-    width: 1200px;
-    margin-left: 40%;
+    text-align: center;
     line-height: 500px;
 }
 #title_img > img {
