@@ -25,22 +25,6 @@ body {font-family: 'Noto Sans KR', sans-serif;
   color: #787878;
 }
 
-/* #bread {
-    width: 1920px;
-    margin: 0 auto;
-    position: relative;
-}
-#bread > h2 {
-    position: absolute;
-    left: 376px;
-    font-size: 14px;
-    font-family: 'Noto sans KR', sans-serif;
-    font-weight: normal;
-    color: #787878;
-    margin-top: 13px;
-} */
-
-
 #visual {
     max-width: 1920px;
     min-width: 1200px;
@@ -121,7 +105,6 @@ section h2 > span {font-size: 24px;}
 }
 /* #sns_event > h2{margin-top: 102px;} */
 
-#news h2 >span,
 #sns_event h2 >span{
     font-size: 37px;
     font-weight: lighter;
