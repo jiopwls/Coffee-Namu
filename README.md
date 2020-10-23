@@ -1,2 +1,2 @@
-# Coffe-Namu
-Coffe Namu Web Renewal
+# Coffee-Namu
+Coffee Namu Web Renewal
