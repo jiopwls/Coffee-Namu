@@ -1,0 +1,215 @@
+/* 페이지 폭 1200px
+    서체 : Noto sans KR
+    글자색상 : #35302d
+    메인컬러 : #35302d
+    서브컬러 : #bf2428
+    메뉴 텍스트 굵기 : 500
+ */
+
+a {text-decoration: none;
+    display: block;
+    color: #2e2e2e;
+}
+body {font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Serif', serif; */
+    font-weight: 16px;
+    color: #35302d;
+}
+.accent {color: #bf2428!important;}
+
+
+.location {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #787878;
+}
+
+/* #bread {
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+#bread > h2 {
+    position: absolute;
+    left: 376px;
+    font-size: 14px;
+    font-family: 'Noto sans KR', sans-serif;
+    font-weight: normal;
+    color: #787878;
+    margin-top: 13px;
+} */
+
+
+#visual {
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    margin-bottom: 0px;
+    position: relative;
+}
+#visual .banner_bg h2 {
+    position: absolute;
+    top: 200px;
+    color: #fff;
+    left: 630px;
+    font-size: 52px;
+    font-weight: bold;
+    font-family: 'Noto serif', sans-serif;
+    font-style: italic;
+}
+
+/* section 공통 제목 스타일 */
+section {text-align: center; font-weight: lighter;}
+section h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+section h2 > span {font-size: 24px;}
+.line {
+    display: inline-block;
+    width: 80px;
+    /* border-bottom: 3px solid #bf2428; */
+    margin-bottom: 20px;
+}
+.slash {font-size: 36px!important;}
+/* .dash {border-top: 1px solid #ccc;} */
+.dash {width: 508px; height: 1px;
+    border-bottom: 1px solid #707070;
+}
+#sns_event {
+    /* position: relative; */
+    width: 1200px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    overflow: hidden;
+    margin-top: 100px;
+    position: relative;
+}
+/* #news {
+    margin-top: 100px;
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+} */
+/* #bread {
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+#bread > h2 {
+    position: absolute;
+    left: 360px;
+    font-size: 14px;
+    font-family: 'Noto sans', sans-serif;
+    font-weight: normal;
+    color: #787878;
+    margin-top: 13px;
+} */
+#sns_event h2,
+#wrap1 h2,
+#wrap2 h2{
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 34px;
+    font-style: italic;
+    position: absolute;
+    left: 40px;
+    margin-top: 44px;
+}
+#sns_event h2 label,
+#wrap1 h2 label,
+#wrap2 h2 label{ 
+    float: right;
+    position: absolute;
+    left: 1000px;
+}
+#sns_event p,
+#wrap1 p,
+#wrap2 p{
+    width: 1200px;
+    border-bottom: 1px solid #2e2e2e;
+    position: absolute;
+    margin-top: 100px;
+    z-index: 999;
+}
+/* #sns_event > h2{margin-top: 102px;} */
+
+#news h2 >span,
+#sns_event h2 >span{
+    font-size: 37px;
+    font-weight: lighter;
+}
+/* sns */
+
+.sns_photo {
+    overflow: hidden;
+    margin-top: 200px;
+    padding-left: 50px;
+    padding-right: 39px;
+    /* outline: 1px solid red; */
+}
+.sns_photo > li{
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin-right: 50px;
+    margin-bottom: 90px;
+    /* outline: 1px solid blue; */
+}
+.sns_photo > li:nth-child(5n) {
+    margin-right: 0;
+}
+.sns_photo > li a {
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 35px;
+}
+.sns_photo > li img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#sns > h2 {
+    font-size: 40px;
+    margin-top: -20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+#sns >h2 span {font-size: 35px;}
+
+
+
+
+#sns_event h2 .right,
+#wrap1 h2 .right,
+#wrap2 h2 .right{
+    background-image: url(/팀과제/image/toggle_btn.png);
+    width: 45px;
+    right: 25px; top: 7px;
+    text-indent: -9999px;
+    /* background-position: -62px 0; */
+}
+/* 토글 구현 */
+#toggle {display: none;}
+#toggle1 {display: none;}
+#toggle2 {display: none;}
+
+/* 체크가 되지 않았을 때(기본) -> 보임 */
+/* #toggle + #wrap #toggle_gnb_wrap {display: block;} */
+#toggle + #wrap .sns_photo:first-child {display: block;}
+#toggle1 + #wrap1 .sns_photo:nth-child(1) {display: block;}
+#toggle2 + #wrap2 .sns_photo:last-child {display: block;}
+
+/* 체크가 되었을 때(:checked) -> 안보임*/
+#toggle:checked + #wrap .sns_photo:first-child {display: none;}
+#toggle1:checked + #wrap1 .sns_photo:nth-child(1) {display: none;}
+#toggle2:checked + #wrap2 .sns_photo:last-child {display: none;}
+.blank {height: 80px;
+/* outline: 1px solid red; */
+}
+/* #toggle_gnb_wrap{margin-top: ;} */
