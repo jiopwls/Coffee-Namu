@@ -91,26 +91,7 @@ section h2 > span {font-size: 24px;}
     margin-top: 100px;
     position: relative;
 }
-/* #news {
-    margin-top: 100px;
-    width: 1920px;
-    margin: 0 auto;
-    position: relative;
-} */
-/* #bread {
-    width: 1920px;
-    margin: 0 auto;
-    position: relative;
-}
-#bread > h2 {
-    position: absolute;
-    left: 360px;
-    font-size: 14px;
-    font-family: 'Noto sans', sans-serif;
-    font-weight: normal;
-    color: #787878;
-    margin-top: 13px;
-} */
+
 #sns_event h2,
 #wrap1 h2,
 #wrap2 h2{
@@ -188,10 +169,11 @@ section h2 > span {font-size: 24px;}
 #sns_event h2 .right,
 #wrap1 h2 .right,
 #wrap2 h2 .right{
-    background-image: url(/팀과제/image/toggle_btn.png);
+    background-image: url(../image_menu/toggle_btn.png);
     width: 45px;
-    right: 25px; top: 7px;
+    right: 25px; top: -10px;
     text-indent: -9999px;
+    outline: 1px solid rgba(46,46,46,0.6);
     /* background-position: -62px 0; */
 }
 /* 토글 구현 */
